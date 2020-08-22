@@ -1,0 +1,29 @@
+{
+    "name": "ordent/cache-url-redis",
+    "description": "AIO Cache Management based on URL and Auth Implementation",
+    "type": "library",
+    "require": {
+        "php": ">=7.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dimas Satrio",
+            "email": "dimassrio@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Ordent\\CacheURLRedis\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ordent\\CacheURLRedis\\Providers\\URLCacheProvider"
+            ]
+        }
+    }
+}
